@@ -56,12 +56,13 @@ const staff = [
     }
   ];
 
-const result3 = () => {
-    let staffDescriptions;
-    return staffDescriptions = staff.map((val) => {
-        return `${val.name} es ${val.role} y le gusta ${val.hobbies.join(" y ")}`;
-    })
-}
+const result3 = staff.map(item => {
+  let staffDescription = [];
+
+  staffDescription.push(`${item.name} es ${item.role} y le gusta ${item.hobbies.join(" y ")}`)
+
+  return staffDescription.toString();
+})
 
 // Ejercicio 4
 
